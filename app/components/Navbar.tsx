@@ -6,7 +6,7 @@ export default function Navbar() {
         <div className='flex justify-between  items-center '>
             <div className='flex items-center gap-2 mt-4'>
                 <div>
-                   <img className='h-16 w-32' src='Frame.png' />
+                    <img className='h-16 w-32' src='Frame.png' />
 
                 </div>
                 <div>
