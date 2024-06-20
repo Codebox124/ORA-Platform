@@ -14,8 +14,8 @@ export default function Hero() {
     <div style={backgroundImageStyle} className='h-screen flex flex-col justify-between py-4 md:px-16 px-4'>
       <Navbar />
       <div className='flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left'>
-        <div className='flex flex-col gap-5 max-w-md'>
-          <h1 className='text-3xl md:text-6xl uppercase'>Cabelo Sedoso</h1>
+        <div className='flex flex-col gap-5 max-w-xl'>
+          <h1 className='text-5xl md:text-6xl uppercase'>Cabelo Sedoso</h1>
           <span className='text-xl md:text-2xl uppercase'>
             Não acontece por acaso, acontece por marcação
           </span>
