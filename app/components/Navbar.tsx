@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className='flex justify-between items-center '>
             <div className='flex items-center gap-2 mt-4'>
                 <div>
-                    <img className='h-16 w-32' src='Frame.png' alt='Logo' />
+                    <img className='md:h-16 md:w-32 h-9 w-20' src='Frame.png' alt='Logo' />
                 </div>
                 <div>
                     <span className='md:text-2xl uppercase'>paraíso das princesas</span>
