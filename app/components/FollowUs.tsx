@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function FollowUs() {
     return (
-        <div className=' max-w-[1420px] w-full mx-auto bg-white text-black'>
+        <div className=' max-w-5xl mx-auto w-full mx-auto bg-white text-black'>
             <div className='flex justify-between mb-10  bg-white'>
                 <p className=' text-3xl'>FOLLOW US ON INSTAGRAM</p>
                 <div className='flex gap-3'>
