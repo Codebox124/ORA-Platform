@@ -19,7 +19,7 @@ export default function Navbar() {
                     <img className='md:h-16 md:w-32 h-9 w-20' src='Frame.png' alt='Logo' />
                 </div>
                 <div>
-                    <span className='md:text-2xl uppercase'>paraíso das princesas</span>
+                    <span className='md:text-2xl text-sm uppercase'>paraíso das princesas</span>
                 </div>
             </div>
             <div className='hidden md:flex items-center gap-10'>
