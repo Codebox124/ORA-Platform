@@ -1,16 +1,17 @@
+import Image from 'next/image'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 export default function Footer() {
   return (
     <div className='max-w-[1640px] mx-auto py-[20px] px-5 md:px-14 lg:px-24 bg-white text-[#494040]'>
-      <div className=' max-w-[1420px] mx-auto h-full py-8 md:py-14 lg:py-20'>
-        <div className=' flex justify-between flex-wrap'>
+      <div className=' max-w-[1420px] mx-auto h-full py-8 md:py-14 lg:py-20 text-center md:text-left'>
+        <div className=' flex justify-center md:justify-between flex-wrap'>
           <div  className=' max-w-[390px] w-full'>
             <div className=' mb-5'>
               <div className='flex items-center gap-3 lg:gap-5 '>
                 <div>
-                    
+                    <Image src='/Vector.png' width={70} height={70} alt='' className='text-black'/>
                 </div>
                 <div className='capitalize font-bold'>
                   paraíso das princesas
@@ -25,7 +26,7 @@ export default function Footer() {
                     Entre no nosso salão e deixe-nos transformar os seus sonhos de beleza em realidade
                   </p>
                 </div>
-                <div className=' flex gap-[25px] mt-6'>
+                <div className=' flex justify-center md:justify-normal gap-[25px] mt-6'>
                   <div className=' text-[#494040] cursor-pointer'><FaFacebookF size={20} /></div>
                   <div className=' text-[#494040] cursor-pointer'><FaInstagram size={20} /></div>
                   <div className=' text-[#494040] cursor-pointer'><FaWhatsapp  size={20}/></div>
@@ -33,7 +34,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div  className=' w-[250px]  mb-5'>
+          <div  className=' w-[250px]  mb-5 hidden lg:block'>
             <div>
               <div className='capitalize font-bold mb-[20px] lg:mb-[30px]'>
                 <h1>Links</h1>
@@ -47,7 +48,7 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-          <div  className=' w-[250px]  mb-5'>
+          <div  className=' w-[250px]  mb-5 hidden lg:block'>
             <div>
               <div className='capitalize font-bold mb-[20px] lg:mb-[30px]'>
                 <h1>Horário</h1>
@@ -78,17 +79,15 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className=' flex justify-between'>
-          <div className=' text-[#BBA39B] font-medium text-xs cursor-pointer'>
+        <div className='flex flex-col-reverse sm:flex-row justify-between'>
+          <div className='text-[#BBA39B] font-medium text-xs cursor-pointer'>
             © PARAÍSO DAS PRINCESAS 2024
           </div>
-
-          <div className='flex gap-3 text-[#BBA39B] font-medium text-xs list-none'>
-            <li className=' cursor-pointer'>
+          <div className='flex justify-center md:justify-normal gap-3 text-[#BBA39B] font-medium text-xs list-none mb-3 md:mb-0'>
+            <li className='cursor-pointer'>
               Privacy Policy
             </li>
-
-            <li className=' cursor-pointer'>
+            <li className='cursor-pointer'>
               Terms of Service
             </li>
           </div>
