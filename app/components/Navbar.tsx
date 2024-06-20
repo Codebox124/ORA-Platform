@@ -14,7 +14,7 @@ export default function Navbar() {
 
     return (
         <div className='flex justify-between items-center '>
-            <div className='flex items-center gap-2 mt-4'>
+            <div className='flex items-center gap-2 '>
                 <div>
                     <img className='md:h-16 md:w-32 h-9 w-20' src='Frame.png' alt='Logo' />
                 </div>
@@ -22,7 +22,7 @@ export default function Navbar() {
                     <span className='md:text-2xl text-sm uppercase'>paraíso das princesas</span>
                 </div>
             </div>
-            <div className='hidden md:flex items-center gap-10'>
+            <div className='hidden md:flex  items-center gap-10'>
                 <a href="#home">Home</a>
                 <a href="#quemsomos">Quem Somos</a>
                 <a href="#servicos">Serviços</a>
