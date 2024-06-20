@@ -47,7 +47,7 @@ export default function Service() {
         <div className='max-w-5xl mx-auto my-24'>
             <h1 className='px-6 border-l-2 text-black my-8 text-xl'>Our services</h1>
 
-            <div style={backgroundImageStyle} className="items-center relative md:static justify-center grid grid-cols-1 md:grid-cols-2">
+            <div style={backgroundImageStyle} className="md:items-center relative md:static justify-center grid grid-cols-1 md:grid-cols-2">
                 <div className='bg-[#1E1E1E66] md:h-full h-2/3 md:px-10 px-5 absolute md:relative bottom-0  flex md:gap-5 gap-8  flex-col justify-center'>
                     <div>
                         <h1 className='text-white text-3xl md:text-5xl'>VENDA DE </h1>
@@ -80,7 +80,7 @@ export default function Service() {
             </div>
 
             <div className='md:hidden'>
-                <Slider {...settings}>
+                <Slider className='overflow-hidden' {...settings}>
                     {services.map((service, index) => (
                         <div key={index} className='flex flex-col items-center text-black bg-[#FAF3F2] p-4'>
                             <div>
