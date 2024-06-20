@@ -34,7 +34,7 @@ export default function Service() {
             <div className='grid grid-cols-2 mt-5 gap-4 text-black'>
                 <div className='flex gap-2  bg-[#FAF3F2] '>
                     <div className='grow'>
-                        <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21.png' />
+                        <img className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21.png' />
 
                     </div>
                     <div className='flex flex-col my-2   gap-8 '>
@@ -46,7 +46,7 @@ export default function Service() {
                 </div>
                 <div className='flex gap-2  bg-[#FAF3F2] '>
                     <div className='grow'>
-                        <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (1).png' />
+                        <img className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (1).png' />
 
                     </div>
                     <div className='flex flex-col my-2   gap-8 '>
@@ -57,31 +57,43 @@ export default function Service() {
 
                 </div>
                 <div className='flex gap-2  bg-[#FAF3F2] '>
-                    <div className='grow'>
-                        <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (2).png' />
+                    <div className='grow'> 
+                            <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (2).png' />
 
                     </div>
-                    <div className='flex flex-col my-2   gap-8 '>
-                        <h1 className='text-xl'>CORTE E MODELISMO </h1>
-                        <span className='text-sm'>Celebre a beleza do seu cabelo natural com cuidados direcionados e personalizados no Paraíso das Princesas. Os nossos serviços de cuidados com cabelo natural destinam-se a indivíduos que procuram realçar e manter a textura única do seu cabelo.</span>
+                        <div className='flex flex-col my-2   gap-8 '>
+                            <h1 className='text-xl'>CORTE E MODELISMO </h1>
+                        <span className='text-sm'>Descubra o corte de cabelo perfeito para o seu estilo e personalidade com nossos estilistas especialistas. Do clássico ao contemporâneo, criamos looks sob medida que amplificam sua beleza natural. </span>
 
                     </div>
 
                 </div>
                 <div className='flex gap-2  bg-[#FAF3F2] '>
                     <div className='grow'>
-                        <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21.png' />
+                        <img  className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (4).png' />
 
                     </div>
                     <div className='flex flex-col my-2 items-center  gap-8 '>
-                        <h1 className='text-xl'>CUIDADOS COM CABELO NATURAL</h1>
-                        <span className='text-sm'>Celebre a beleza do seu cabelo natural com cuidados direcionados e personalizados no Paraíso das Princesas. Os nossos serviços de cuidados com cabelo natural destinam-se a indivíduos que procuram realçar e manter a textura única do seu cabelo.</span>
+                        <h1 className='text-xl'>ESTÉTICA E BEM-ESTAR /h1>
+                        <span className='text-sm'>Eleve a sua beleza com os nossos serviços especializados no Paraíso das Princesas. Desde a  depilação à  manicure, mime-se com tratamentos luxuosos adaptados para realçar o seu estilo único.</span>
 
                     </div>
+            
+                </div>
+            <div className='flex gap-2  bg-[#FAF3F2] '>
+                <div className='grow'>
+                    <img className='' src='juan-manuel-merino-wNQ180WtW5g-unsplash-2 21 (5).png' />
 
                 </div>
+                <div className='flex flex-col my-2 items-center  gap-8 '>
+                    <h1 className='text-xl'>COLORAÇÃO /h1>
+                        <span className='text-sm'>Transforme o seu cabelo com a nossa coloração especializada. Desde destaques subtis a tons audaciosos, os nossos coloristas dão vida à sua visão. Quer procure um look natural ou uma mudança dramática, confie em nós para resultados impecáveis."</span>
 
-            </div>
+                    </div>
+                
+                </div>
+            
+            </div >
         </div>
-    )
-}
+    ) 
+} 
