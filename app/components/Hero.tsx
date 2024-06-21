@@ -69,7 +69,7 @@ export default function Hero() {
         ))}
       </div>
       <div className='md:hidden py-4'>
-        <Slider {...sliderSettings} className='w-full'>
+        <Slider {...sliderSettings} className='w-full overflow-x-hidden'>
           {infoItems.map((item, index) => (
             <div key={index} className='flex justify-center flex-col text-center items-center animate-fade-in'>
               <div className='flex flex-col md:flex-row gap-2 justify-center items-center'>

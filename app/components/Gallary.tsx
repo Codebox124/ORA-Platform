@@ -43,7 +43,7 @@ export default function Gallery() {
           {/* <button onClick={() => setFilter('all')} className={filter === 'all' ? 'font-bold' : ''}>All</button> */}
         </div>
       </div>
-      <div className='overflow-x-auto  md:pl-32'>
+      <div className='overflow-x-scroll  md:pl-32'>
         <div className='flex gap-3'>
           {filteredData.map((item, index) => (
             <div key={index} className='flex-shrink-0 '>
