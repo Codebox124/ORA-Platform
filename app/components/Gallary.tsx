@@ -74,10 +74,10 @@ export default function Gallery() {
         </div>
       </div>
       <div className='overflow-hidden md:pl-32'>
-        <Slider {...settings} className='flex'>
+        <Slider {...settings}>
           {filteredData.map((item, index) => (
             <div key={index} className='px-1'>
-              <img src={item.image} alt={item.alt} className=' w-full      ' />
+              <img src={item.image} alt={item.alt} className=' w-full mx-auto transition-transform duration-500 hover:scale-105' />
             </div>
           ))}
         </Slider>
