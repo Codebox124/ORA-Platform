@@ -1,5 +1,9 @@
+'use client'
 import React from 'react';
 import Navbar from './Navbar';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function Hero() {
   const backgroundImageStyle = {
@@ -8,6 +12,35 @@ export default function Hero() {
     backgroundPosition: 'center',
     height: '100vh',
     width: '100%',
+  };
+
+  const infoItems = [
+    {
+      img: 'location (1).png',
+      alt: 'Location',
+      label: 'Address:',
+      value: 'Rua Aquiles Machado 5 1900-077 Lisboa',
+    },
+    {
+      img: 'routing-2.png',
+      alt: 'Parking',
+      label: 'Parking:',
+      value: 'Parqueamento junto ao salão',
+    },
+    {
+      img: 'routing-2 (1).png',
+      alt: 'Metro',
+      label: 'Metro:',
+      value: 'Estação de Metro junto ao salão',
+    },
+  ];
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
 
   return (
@@ -24,30 +57,32 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-4 py-4'>
-        <div className='flex gap-2 items-center'>
-          <img className='h-12 w-12' src='location (1).png' alt='Location' />
-          <div>
-            <span className='text-sm'>Address:</span>
-            <h1 className='font-bold text-sm'>Rua Aquiles Machado 5 1900-077 Lisboa</h1>
+      <div className='hidden md:grid grid-cols-1 md:grid-cols-3 gap-4 py-4'>
+        {infoItems.map((item, index) => (
+          <div key={index} className='flex gap-2 items-center'>
+            <img className='h-12 w-12' src={item.img} alt={item.alt} />
+            <div>
+              <span className='text-sm'>{item.label}</span>
+              <h1 className='font-bold text-sm'>{item.value}</h1>
+            </div>
           </div>
-        </div>
-        <div className='flex gap-2 items-center'>
-          <img className='h-12 w-12' src='routing-2.png' alt='Parking' />
-          <div>
-            <span className='text-sm'>Parking:</span>
-            <h1 className='font-bold text-sm'>Parqueamento junto ao salão</h1>
-          </div>
-        </div>
-        <div className='flex gap-2 items-center'>
-          <img className='h-12 w-12' src='routing-2 (1).png' alt='Metro' />
-          <div>
-            <span className='text-sm'>Metro:</span>
-            <h1 className='font-bold text-sm'>Estação de Metro junto ao salão</h1>
-          </div>
-        </div>
+        ))}
       </div>
-
+      <div className='md:hidden py-4'>
+        <Slider {...sliderSettings} className='w-full'>
+          {infoItems.map((item, index) => (
+            <div key={index} className='flex justify-center flex-col items-center'>
+              <div className='flex gap-2 items-center'>
+                <img className='h-12 w-12' src={item.img} alt={item.alt} />
+                <div>
+                  <span className='text-sm'>{item.label}</span>
+                  <h1 className='font-bold text-sm'>{item.value}</h1>
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
