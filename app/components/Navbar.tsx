@@ -39,7 +39,7 @@ export default function Navbar() {
                 </button>
             </div>
             {isOpen && (
-                <Menu as='div' className='absolute top-0 left-0 w-full h-screen bg-white text-black shadow-lg md:hidden'>
+                <Menu as='div' className='absolute top-0 left-0 w-full  bg-white text-black shadow-lg md:hidden'>
                     <div className='flex flex-col items-center gap-4 p-4'>
                         <button onClick={handleToggle} className='self-end focus:outline-none'>
                             <MdClose className='h-8 w-8 text-black' />
