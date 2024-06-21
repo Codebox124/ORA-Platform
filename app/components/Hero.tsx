@@ -44,7 +44,7 @@ export default function Hero() {
   };
 
   return (
-    <div style={backgroundImageStyle} className='h-screen flex flex-col justify-between py-4 md:px-16 px-4'>
+    <div style={backgroundImageStyle} className='md:h-screen flex flex-col justify-between py-4 md:px-16 px-4'>
       <Navbar />
       <div className='flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left'>
         <div className='flex flex-col gap-5 max-w-xl animate-fade-in'>
@@ -69,7 +69,7 @@ export default function Hero() {
         ))}
       </div>
       <div className='md:hidden py-4'>
-        <Slider {...sliderSettings} className=' overflow-x-hidden'>
+        <Slider {...sliderSettings} className=' overflow-hidden'>
           {infoItems.map((item, index) => (
             <div key={index} className='flex justify-center flex-col text-center items-center animate-fade-in'>
               <div className='flex flex-col md:flex-row gap-2 justify-center items-center'>
