@@ -69,10 +69,10 @@ export default function Hero() {
         ))}
       </div>
       <div className='md:hidden py-4'>
-        <Slider {...sliderSettings} className='w-full'>
+        <Slider {...sliderSettings} className='w-full '>
           {infoItems.map((item, index) => (
-            <div key={index} className='flex justify-center flex-col items-center'>
-              <div className='flex gap-2 items-center'>
+            <div key={index} className='flex justify-center  flex-col text-center items-center'>
+              <div className='flex flex-col md:flex-row gap-2 justify-center items-center'>
                 <img className='h-12 w-12' src={item.img} alt={item.alt} />
                 <div>
                   <span className='text-sm'>{item.label}</span>
