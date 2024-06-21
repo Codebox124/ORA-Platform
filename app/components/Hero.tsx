@@ -33,14 +33,14 @@ export default function Hero() {
           </div>
         </div>
         <div className='flex gap-2 items-center'>
-          <img className='h-12 w-12' src='location (1).png' alt='Parking' />
+          <img className='h-12 w-12' src='routing-2.png' alt='Parking' />
           <div>
             <span className='text-sm'>Parking:</span>
             <h1 className='font-bold text-sm'>Parqueamento junto ao salão</h1>
           </div>
         </div>
         <div className='flex gap-2 items-center'>
-          <img className='h-12 w-12' src='location (1).png' alt='Metro' />
+          <img className='h-12 w-12' src='routing-2 (1).png' alt='Metro' />
           <div>
             <span className='text-sm'>Metro:</span>
             <h1 className='font-bold text-sm'>Estação de Metro junto ao salão</h1>

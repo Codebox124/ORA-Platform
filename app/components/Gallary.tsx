@@ -17,7 +17,7 @@ const galleryData: GalleryItem[] = [
   { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 30.png', alt: 'Image 1', category: 'woman' },
   { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 33 (1).png', alt: 'Image 1', category: 'woman' },
   { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 30 (1).png', alt: 'Image 1', category: 'woman' },
-  { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 33 (1).png', alt: 'Image 1', category: 'woman' },
+
 
   { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 36.png', alt: 'Image 1', category: 'man' },
   { image: 'juan-manuel-merino-wNQ180WtW5g-unsplash-2 37.png', alt: 'Image 1', category: 'man' },
