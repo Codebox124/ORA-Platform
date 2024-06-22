@@ -80,7 +80,7 @@ export default function Service() {
                 ))}
 
                 <div className='bg-[#ab8672]'>
-                    <div className='w-full h-full bg-[#A5775E] text-white ml-3 p-6 flex flex-col justify-between'>
+                    <div className='w-full  bg-[#A5775E] text-white ml-3 p-6 flex flex-col justify-between'>
                         <div>
                             <p className=' text-5xl font-light'>−15% DESCONTO</p>
                             <span className='italic text-3xl font-light'>na sua primeira visita</span>
