@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import servicesData from '@/app/data/services.json';
+import { PiGreaterThanLight } from 'react-icons/pi';
 
 interface ServiceItem {
     title: string;
@@ -12,6 +13,7 @@ interface ServiceItem {
 }
 
 export default function Service() {
+    const [nextClicked, setNextClicked] = useState(false);
     const [services, setServices] = useState<ServiceItem[]>([]);
 
     useEffect(() => {
@@ -64,7 +66,7 @@ export default function Service() {
                 </div>
             </div>
 
-            <div className='hidden md:grid md:grid-cols-2 mt-5 gap-4 text-black animate-fade-in'>
+            <div className='hidden md:grid grid-cols-1 lg:grid-cols-2 mt-5 gap-4 text-black animate-fade-in'>
                 {services.map((service, index) => (
                     <div key={index} className='flex gap-2 bg-[#FAF3F2] p-4 animate-fade-in'>
                         <div>
@@ -76,6 +78,33 @@ export default function Service() {
                         </div>
                     </div>
                 ))}
+
+                <div className='bg-[#ab8672]'>
+                    <div className='w-full h-full bg-[#A5775E] text-white ml-3 p-6 flex flex-col justify-between'>
+                        <div>
+                            <p className=' text-5xl font-light'>−15% DESCONTO</p>
+                            <span className='italic text-3xl font-light'>na sua primeira visita</span>
+                        </div>
+
+                        <div className='mt-auto'>
+                            <div className='flex justify-between items-center'>
+                                <div>
+                                    <p className=' text-lg'>FAZER MARCAÇÃO</p>
+                                </div>
+
+                                <button
+                                onClick={() => {
+                                    setNextClicked(true);
+                                    setTimeout(() => setNextClicked(false), 200);
+                                }}
+                                    className={`p-2 border w-fit h-fit hidden md:block ${nextClicked ? 'bg-[#DDC3BB66] text-white' : 'border-[#DDC3BB66]'}`}
+                                >
+                                    <PiGreaterThanLight size={19} />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div className='md:hidden animate-fade-in'>
@@ -92,6 +121,33 @@ export default function Service() {
                         </div>
                     ))}
                 </Slider>
+
+                <div className='bg-[#ab8672]'>
+                    <div className='w-full h-full bg-[#A5775E] text-white ml-3 p-6 flex flex-col justify-between'>
+                        <div>
+                            <p className=' text-4xl font-light'>−15% DESCONTO</p>
+                            <span className='italic text-2xl font-light'>na sua primeira visita</span>
+                        </div>
+
+                        <div className='mt-auto'>
+                            <div className='flex justify-between items-center'>
+                                <div>
+                                    <p className=' text-base'>FAZER MARCAÇÃO</p>
+                                </div>
+
+                                <button
+                                onClick={() => {
+                                    setNextClicked(true);
+                                    setTimeout(() => setNextClicked(false), 200);
+                                }}
+                                    className={`p-2 border w-fit h-fit hidden md:block ${nextClicked ? 'bg-[#DDC3BB66] text-white' : 'border-[#DDC3BB66]'}`}
+                                >
+                                    <PiGreaterThanLight size={19} />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

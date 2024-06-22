@@ -1,11 +1,16 @@
 'use client'
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Navbar from './Navbar';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { PiGreaterThanLight, PiLessThanLight } from 'react-icons/pi';
 
 export default function Hero() {
+  const [prevClicked, setPrevClicked] = useState(false);
+  const [nextClicked, setNextClicked] = useState(false);
+  const sliderRef = useRef<Slider | null>(null);
+
   const backgroundImageStyle = {
     backgroundImage: 'url("sheldon-C8MrJpuwjDM-unsplash-2 1.png")',
     backgroundSize: 'cover',
@@ -68,8 +73,19 @@ export default function Hero() {
           </div>
         ))}
       </div>
-      <div className='md:hidden py-4'>
-        <Slider {...sliderSettings} className=' overflow-hidden'>
+      <div className='md:hidden py-4 flex justify-between items-center'>
+        <button
+        onClick={() => {
+          sliderRef.current?.slickPrev();
+          setPrevClicked(true);
+          setTimeout(() => setPrevClicked(false), 200);
+        }}
+          className={`p-2 w-fit h-fit ${prevClicked ? 'text-[#DDC3BB66]' : 'border-white'}`}
+        >
+          <PiLessThanLight size={19} />
+        </button>
+
+        <Slider {...sliderSettings} className=' overflow-hidden' ref={sliderRef}>
           {infoItems.map((item, index) => (
             <div key={index} className='flex justify-center flex-col text-center items-center animate-fade-in'>
               <div className='flex flex-col md:flex-row gap-2 justify-center items-center'>
@@ -82,6 +98,17 @@ export default function Hero() {
             </div>
           ))}
         </Slider>
+
+        <button
+          onClick={() => {
+            sliderRef.current?.slickNext();
+            setNextClicked(true);
+            setTimeout(() => setNextClicked(false), 200);
+          }}
+            className={`p-2 w-fit h-fit ${nextClicked ? 'text-[#DDC3BB66]' : 'border-white'}`}
+          >
+            <PiGreaterThanLight size={19} />
+          </button>
       </div>
     </div>
   );
