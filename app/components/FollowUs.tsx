@@ -48,6 +48,15 @@ export default function FollowUs() {
                     </div>
                 </div>
             </div>
+
+            <div className='hidden md:flex lg:hidden mb-[70px]'>
+                <div className=''>
+                    <Image src="/Hair_tres.png" width={355} height={355} alt="" className='w-[512px] lg:w-[355px]'/>
+                </div>
+                <div className=''>
+                    <Image src="/Hair_quat.png" width={355} height={355} alt="" className='w-[512px] lg:w-[355px]'/>
+                </div>
+            </div>
         </div>
     )
 }

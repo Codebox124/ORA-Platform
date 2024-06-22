@@ -1,24 +1,43 @@
 import Image from 'next/image'
 import React from 'react'
+import { BiMenu } from 'react-icons/bi'
 import { FaFacebookF, FaInstagram, FaWhatsapp } from 'react-icons/fa'
 
 export default function Footer() {
   return (
     <div className='max-w-[1640px] mx-auto py-[20px] px-5 md:px-14 lg:px-24 bg-white text-[#494040]'>
       <div className=' max-w-[1420px] mx-auto h-full py-8 md:py-14 lg:py-20 text-center md:text-left'>
+
+        <div className='flex justify-between items-center lg:hidden mb-8'>
+          <div className='flex items-center gap-3 lg:gap-5 lg:hidden'>
+            <div>
+              <Image src='/Vector.png' width={70} height={70} alt='' className='text-black'/>
+            </div>
+            <div className='capitalize font-bold'>
+              paraíso das princesas
+            </div>
+          </div>
+
+          <div>
+            <BiMenu className='h-8 w-8 text-[#494040]'/>
+          </div>
+        </div>
+
         <div className=' flex justify-center md:justify-between flex-wrap'>
           <div  className=' max-w-[390px] w-full'>
             <div className=' mb-5'>
-              <div className='flex items-center gap-3 lg:gap-5 '>
+
+              <div className='lg:flex items-center gap-3 lg:gap-5 hidden'>
                 <div>
-                    <Image src='/Vector.png' width={70} height={70} alt='' className='text-black'/>
+                  <Image src='/Vector.png' width={70} height={70} alt='' className='text-black'/>
                 </div>
                 <div className='capitalize font-bold'>
                   paraíso das princesas
                 </div>
               </div>
+
               <div>
-                <div className=' capitalize font-bold mt-5'>
+                <div className=' capitalize font-bold mt-0 lg:mt-5'>
                   <p>Caros visitantes! </p>
                 </div>
                 <div className='my-[25px]'>
