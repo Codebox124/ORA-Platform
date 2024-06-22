@@ -103,7 +103,7 @@ export default function Gallery() {
         </div>
       </div>
       <div className='overflow-hidden md:pl-32'>
-        <Slider ref={sliderRef} {...settings}>
+        <Slider className='overflow-hidden' ref={sliderRef} {...settings}>
           {filteredData.map((item, index) => (
             <div key={index} className='px-1'>
               <img src={item.image} alt={item.alt} className='w-full h-[500px] md:h-[600px] object-cover mx-auto transition-transform duration-500 hover:scale-105' />
